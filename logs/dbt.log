@@ -1,0 +1,168 @@
+[0m14:29:57.264437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cad6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10782fd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10782fed0>]}
+
+
+============================== 14:29:57.267134 | ea1365c8-e650-4ce8-854a-4baee0119b11 ==============================
+[0m14:29:57.267134 [info ] [MainThread]: Running with dbt=1.9.2
+[0m14:29:57.267472 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/sergiopestana/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m14:29:57.278850 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/Users/sergiopestana/.dbt')}
+[0m14:29:57.279056 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m14:31:02.321943 [debug] [MainThread]: Starter project path: /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m14:31:02.341451 [info ] [MainThread]: 
+Your new dbt project "nbafantasy" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:31:02.342614 [info ] [MainThread]: Setting up your profile.
+[0m14:32:20.218817 [info ] [MainThread]: Profile nbafantasy written to /Users/sergiopestana/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:32:20.230682 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 142.99728, "process_in_blocks": "0", "process_kernel_time": 0.182193, "process_mem_max_rss": "95289344", "process_out_blocks": "0", "process_user_time": 0.681554}
+[0m14:32:20.231818 [debug] [MainThread]: Command `dbt init` succeeded at 14:32:20.231398 after 143.00 seconds
+[0m14:32:20.233838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079e8e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c396d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078da9c0>]}
+[0m14:32:20.234812 [debug] [MainThread]: Flushing usage events
+[0m14:32:21.130757 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:41:50.679919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058756a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066e2ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066e2990>]}
+
+
+============================== 14:41:50.683089 | 44d86554-f6c6-47a6-966b-39ca36661628 ==============================
+[0m14:41:50.683089 [info ] [MainThread]: Running with dbt=1.9.2
+[0m14:41:50.683374 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:41:50.698188 [info ] [MainThread]: dbt version: 1.9.2
+[0m14:41:50.698392 [info ] [MainThread]: python version: 3.13.1
+[0m14:41:50.698521 [info ] [MainThread]: python path: /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/.venv/bin/python3.13
+[0m14:41:50.698638 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit-Mach-O
+[0m14:41:50.698901 [error] [MainThread]: Encountered an error:
+cannot access local variable 'summary_message' where it is not associated with a value
+[0m14:41:50.700828 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/.venv/lib/python3.13/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/.venv/lib/python3.13/site-packages/dbt/cli/main.py", line 414, in debug
+    results = task.run()
+  File "/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/.venv/lib/python3.13/site-packages/dbt/task/debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/.venv/lib/python3.13/site-packages/dbt/task/debug.py", line 201, in _load_profile
+    profile_names, summary_message = self._choose_profile_names()
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/.venv/lib/python3.13/site-packages/dbt/task/debug.py", line 276, in _choose_profile_names
+    return profiles, summary_message
+                     ^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'summary_message' where it is not associated with a value
+
+[0m14:41:50.702430 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.03738575, "process_in_blocks": "0", "process_kernel_time": 0.116479, "process_mem_max_rss": "95502336", "process_out_blocks": "0", "process_user_time": 0.521216}
+[0m14:41:50.702640 [debug] [MainThread]: Command `dbt debug` failed at 14:41:50.702591 after 0.04 seconds
+[0m14:41:50.702808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10674c9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065f5d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10672e030>]}
+[0m14:41:50.702981 [debug] [MainThread]: Flushing usage events
+[0m14:41:51.557161 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:43:21.194559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051196a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f86ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f86990>]}
+
+
+============================== 14:43:21.197689 | 162bf26e-51bb-4a81-904f-042464ff14f3 ==============================
+[0m14:43:21.197689 [info ] [MainThread]: Running with dbt=1.9.2
+[0m14:43:21.198013 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:43:21.211329 [info ] [MainThread]: dbt version: 1.9.2
+[0m14:43:21.211546 [info ] [MainThread]: python version: 3.13.1
+[0m14:43:21.211670 [info ] [MainThread]: python path: /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/.venv/bin/python3.13
+[0m14:43:21.211779 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit-Mach-O
+[0m14:43:21.212049 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 2
+  ------------------------------
+  1  | your_project_name: nbafantasy
+  2  |   target: dev
+  3  |   outputs:
+  4  |     dev:
+  5  |       type: postgres
+  
+  Raw Error:
+  ------------------------------
+  mapping values are not allowed in this context
+    in "<unicode string>", line 2, column 9
+[0m14:43:21.213588 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.037000377, "process_in_blocks": "0", "process_kernel_time": 0.112437, "process_mem_max_rss": "86720512", "process_out_blocks": "0", "process_user_time": 0.53699}
+[0m14:43:21.213808 [debug] [MainThread]: Command `dbt debug` failed at 14:43:21.213756 after 0.04 seconds
+[0m14:43:21.213985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ff0770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e99eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fd5f20>]}
+[0m14:43:21.214164 [debug] [MainThread]: Flushing usage events
+[0m14:43:21.955283 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:44:03.569406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e596a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ccbd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ccbed0>]}
+
+
+============================== 14:44:03.572248 | b7cff026-53a1-4398-9262-22ca599653f6 ==============================
+[0m14:44:03.572248 [info ] [MainThread]: Running with dbt=1.9.2
+[0m14:44:03.572566 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:44:03.585070 [info ] [MainThread]: dbt version: 1.9.2
+[0m14:44:03.585308 [info ] [MainThread]: python version: 3.13.1
+[0m14:44:03.585454 [info ] [MainThread]: python path: /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/.venv/bin/python3.13
+[0m14:44:03.585573 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit-Mach-O
+[0m14:44:03.648999 [info ] [MainThread]: Using profiles dir at /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion
+[0m14:44:03.649232 [info ] [MainThread]: Using profiles.yml file at /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/profiles.yml
+[0m14:44:03.649360 [info ] [MainThread]: Using dbt_project.yml file at /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/dbt_project.yml
+[0m14:44:03.649721 [info ] [MainThread]: adapter type: postgres
+[0m14:44:03.649881 [info ] [MainThread]: adapter version: 1.9.0
+[0m14:44:03.650009 [info ] [MainThread]: Configuration:
+[0m14:44:03.650118 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:44:03.650222 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:44:03.650321 [info ] [MainThread]: Required dependencies:
+[0m14:44:03.650453 [debug] [MainThread]: Executing "git --help"
+[0m14:44:03.665906 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:44:03.666336 [debug] [MainThread]: STDERR: "b''"
+[0m14:44:03.666492 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:44:03.666629 [info ] [MainThread]: Connection:
+[0m14:44:03.666761 [info ] [MainThread]:   host: dpg-cuh3rf5ds78s73dh8mqg-a.oregon-postgres.render.com
+[0m14:44:03.666932 [info ] [MainThread]:   port: 5432
+[0m14:44:03.667178 [info ] [MainThread]:   user: postgres123
+[0m14:44:03.667298 [info ] [MainThread]:   database: dbfantasy
+[0m14:44:03.667414 [info ] [MainThread]:   schema: public
+[0m14:44:03.667526 [info ] [MainThread]:   connect_timeout: 10
+[0m14:44:03.667655 [info ] [MainThread]:   role: None
+[0m14:44:03.667775 [info ] [MainThread]:   search_path: None
+[0m14:44:03.667884 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:44:03.667988 [info ] [MainThread]:   sslmode: None
+[0m14:44:03.668085 [info ] [MainThread]:   sslcert: None
+[0m14:44:03.668177 [info ] [MainThread]:   sslkey: None
+[0m14:44:03.668277 [info ] [MainThread]:   sslrootcert: None
+[0m14:44:03.668366 [info ] [MainThread]:   application_name: dbt
+[0m14:44:03.668456 [info ] [MainThread]:   retries: 1
+[0m14:44:03.668752 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m14:44:03.721181 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:44:03.769436 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:44:03.769753 [debug] [MainThread]: On debug: select 1 as id
+[0m14:44:03.769906 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:44:05.815753 [debug] [MainThread]: SQL status: SELECT 1 in 2.045 seconds
+[0m14:44:05.819492 [debug] [MainThread]: On debug: Close
+[0m14:44:05.820443 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:44:05.820914 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:44:05.821270 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/dbt_project.yml> not found
+
+[0m14:44:05.825681 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 2.2915564, "process_in_blocks": "0", "process_kernel_time": 0.185216, "process_mem_max_rss": "107249664", "process_out_blocks": "0", "process_user_time": 0.619795}
+[0m14:44:05.826145 [debug] [MainThread]: Command `dbt debug` failed at 14:44:05.826033 after 2.29 seconds
+[0m14:44:05.826519 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:44:05.826885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e076f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109277650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d77460>]}
+[0m14:44:05.827307 [debug] [MainThread]: Flushing usage events
+[0m14:44:06.544812 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:44:42.673104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103afd6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f33d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f33ed0>]}
+
+
+============================== 14:44:42.675851 | 5b21f55e-1836-45ab-94d9-cade8bc8cd98 ==============================
+[0m14:44:42.675851 [info ] [MainThread]: Running with dbt=1.9.2
+[0m14:44:42.676135 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init nbafantasy', 'send_anonymous_usage_stats': 'True'}
+[0m14:44:42.685827 [info ] [MainThread]: A project called nbafantasy already exists here.
+[0m14:44:42.687409 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.050336584, "process_in_blocks": "0", "process_kernel_time": 0.099639, "process_mem_max_rss": "96075776", "process_out_blocks": "0", "process_user_time": 0.537273}
+[0m14:44:42.687682 [debug] [MainThread]: Command `dbt init` succeeded at 14:44:42.687625 after 0.05 seconds
+[0m14:44:42.687860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f72650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fef1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104db3350>]}
+[0m14:44:42.688026 [debug] [MainThread]: Flushing usage events
+[0m14:44:43.550163 [debug] [MainThread]: An error was encountered while trying to flush usage events
