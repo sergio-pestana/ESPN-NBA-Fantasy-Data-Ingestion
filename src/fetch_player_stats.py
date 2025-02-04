@@ -3,6 +3,21 @@ from league_vars import league
 # Data Manipulation
 import numpy as np
 import pandas as pd
+from sqlalchemy import create_engine
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+DB_HOST=os.getenv('DB_HOST_PROD')
+DB_PORT=os.getenv('DB_PORT_PROD')
+DB_NAME=os.getenv('DB_NAME_PROD')
+DB_USER=os.getenv('DB_USER_PROD')
+DB_PASS=os.getenv('DB_PASS_PROD')
+DB_SCHEMA=os.getenv('DB_SCHEMA_PROD')
+
+DATABASE_URL = f'postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}/{DB_NAME}'
+engine = create_engine(DATABASE_URL)
 
 
 def get_player_stats():
@@ -89,6 +104,20 @@ def get_player_stats():
 
     return pd.DataFrame(all_players)
 
+def convert_custom_types(df):
+    df = df.copy()
+    for col in df.columns:
+        if df[col].apply(lambda x: hasattr(x, '__str__')).any():
+            df[col] = df[col].astype(str)
+    return df
+    
+def save_to_postgres(df, schema='public'):
+    df = convert_custom_types(df)
+    df.to_sql('player_stats', engine, if_exists='replace', schema=schema)
+
 
 if __name__ == "__main__":
-    print(get_player_stats())
+    player_stats_df = get_player_stats()
+    save_to_postgres(player_stats_df, schema='public')
+    print('Done')
+    

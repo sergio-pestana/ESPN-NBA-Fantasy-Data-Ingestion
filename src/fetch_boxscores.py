@@ -3,6 +3,20 @@ from league_vars import league
 # Data Manipulation
 import pandas as pd
 import hashlib
+from sqlalchemy import create_engine
+from dotenv import load_dotenv
+import os
+
+
+DB_HOST=os.getenv('DB_HOST_PROD')
+DB_PORT=os.getenv('DB_PORT_PROD')
+DB_NAME=os.getenv('DB_NAME_PROD')
+DB_USER=os.getenv('DB_USER_PROD')
+DB_PASS=os.getenv('DB_PASS_PROD')
+DB_SCHEMA=os.getenv('DB_SCHEMA_PROD')
+
+DATABASE_URL = f'postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}/{DB_NAME}'
+engine = create_engine(DATABASE_URL)
 
 def get_matches_boxscores():
     try:
@@ -63,6 +77,19 @@ def get_matches_boxscores():
     except Exception as e:
         print(f"Error creating DataFrame: {str(e)}")
         return None
+
+def convert_custom_types(df):
+    df = df.copy()
+    for col in df.columns:
+        if df[col].apply(lambda x: hasattr(x, '__str__')).any():
+            df[col] = df[col].astype(str)
+    return df
+    
+def save_to_postgres(df, schema='public'):
+    df = convert_custom_types(df)
+    df.to_sql('boxscores', engine, if_exists='replace', schema=schema)
     
 if __name__ == "__main__":
-    print(get_matches_boxscores())
+    boxscores_df = get_matches_boxscores()
+    save_to_postgres(boxscores_df, schema='public')
+    print('Done')
