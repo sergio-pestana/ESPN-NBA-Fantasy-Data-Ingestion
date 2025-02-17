@@ -1,0 +1,132 @@
+version: 2
+
+models:
+  - name: silver_boxscores
+    description: "Cleaned and transformed fantasy basketball game boxscores with home/away team statistics"
+    columns:
+      - name: boxscore_id
+        description: "Unique identifier for each boxscore"
+        tests:
+          - unique
+          - not_null
+      - name: match_week
+        description: "Week number of the fantasy season"
+        tests:
+          - not_null
+      - name: match_header
+        description: "Descriptive text of the matchup"
+      - name: home_team
+        description: "Fantasy team playing as home team"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_teams')
+              field: Team Name
+      - name: away_team
+        description: "Fantasy team playing as away team"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_teams')
+              field: Team Name
+
+  - name: silver_last_activities
+    description: "Recent activity log tracking roster changes and team management actions"
+    columns:
+      - name: activity_id
+        description: "Unique identifier for each activity"
+        tests:
+          - unique
+          - not_null
+      - name: processed_at
+        description: "Timestamp when the activity occurred"
+        tests:
+          - not_null
+      - name: fantasy_team
+        description: "Team that performed the activity"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_teams')
+              field: Team Name
+      - name: activity_type
+        description: "Type of activity (e.g., add, drop, trade)"
+        tests:
+          - not_null
+      - name: player_name
+        description: "Name of the player involved in the activity"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_player_stats')
+              field: player_name
+
+  - name: silver_player_stats
+    description: "Comprehensive player statistics including season averages and rolling period stats"
+    columns:
+      - name: player_id
+        description: "Unique identifier for each player"
+        tests:
+          - unique
+          - not_null
+      - name: player_name
+        description: "Player's full name"
+        tests:
+          - not_null
+      - name: position 
+        description: "Player's primary position"
+        tests:
+          - not_null
+      - name: posRank
+        description: "Player's rank within their position"
+      - name: proTeam
+        description: "NBA team the player belongs to"
+      - name: fantasy_team
+        description: "Fantasy team that owns the player"
+        tests:
+          - relationships:
+              to: ref('silver_teams')
+              field: Team Name
+      - name: injured
+        description: "Boolean indicating if player is injured"
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+
+  - name: silver_teams
+    description: "Fantasy league teams and their current season statistics"
+    columns:
+      - name: Team ID
+        description: "Unique identifier for each team"
+        tests:
+          - unique
+          - not_null
+      - name: Team Name
+        description: "Fantasy team name"
+        tests:
+          - unique
+          - not_null
+      - name: Team Owner
+        description: "Name of team owner/manager"
+        tests:
+          - not_null
+      - name: Division ID
+        description: "Identifier for team's division"
+        tests:
+          - not_null
+      - name: Division Name
+        description: "Name of division team belongs to"
+        tests:
+          - not_null
+      - name: Current Standing
+        description: "Team's current rank in their division"
+        tests:
+          - not_null
+      - name: Team Wins
+        description: "Total number of wins for the season"
+        tests:
+          - not_null
+      - name: Team Losses
+        description: "Total number of losses for the season"
+        tests:
+          - not_null

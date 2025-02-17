@@ -1,21 +1,4 @@
-{{ config(
-    materialized='incremental',
-    unique_key='player_id',
-    incremental_strategy='merge',
-    on_schema_change='fail'
-)}}
-
-with source as (
-    select id
-    from {{ source ('dbfantasy', 'player_stats')}}
-    {% if is_incremental() %}
-    EXCEPT
-    select player_id
-    from {{ this }}
-    {% endif %}
-),
-
-recast AS (
+with source AS (
     select
         id
         , name
@@ -31,7 +14,6 @@ recast AS (
         , "injured"
     from 
         {{ source ('dbfantasy', 'player_stats')}}
-    where id in (select id from source)
 
 ),
 
@@ -91,7 +73,7 @@ final as (
         ] "30d_stats_array"
         , "injured"
     from 
-        recast
+        source
 ),
 
 -- rename

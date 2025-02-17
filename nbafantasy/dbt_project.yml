@@ -32,7 +32,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   nbafantasy:
     # Config indicated by + and applies to all files under models/example/
-    +materialized: table  # default materialization
+    +materialized: table 
+    
     silver:
       silver_boxscores: 
         +schema: silver 
@@ -45,8 +46,6 @@ models:
 
       silver_player_stats: 
         +schema: silver 
-        +materialized: incremental
-        +incremental_strategy: merge
         +on_schema_change: fail
 
       silver_last_activities: 

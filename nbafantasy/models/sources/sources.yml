@@ -1,0 +1,111 @@
+version: 2
+
+sources:
+  - name: dbfantasy
+    description: "Source fantasy basketball data from ESPN API"
+    database: dbfantasy  
+    schema: public      
+    tables:
+      - name: boxscores
+        description: "Raw game statistics and matchup data from fantasy basketball matches"
+        columns:
+          - name: id
+            description: "Unique identifier for each boxscore"
+            tests:
+              - unique
+              - not_null
+          - name: week
+            description: "Fantasy season week number"
+            tests:
+              - not_null
+              - positive_values
+          - name: match_header
+            description: "Description of the matchup"
+          - name: home_team
+            description: "Name of the home team"
+            tests:
+              - not_null
+          - name: away_team
+            description: "Name of the away team"
+            tests:
+              - not_null
+
+      - name: last_activities
+        description: "Raw activity log capturing team management actions like trades and roster moves"
+        columns:
+          - name: id
+            description: "Unique identifier for each activity"
+            tests:
+              - unique
+              - not_null
+          - name: processed_at
+            description: "Timestamp when the activity occurred"
+            tests:
+              - not_null
+          - name: team
+            description: "Team performing the activity"
+            tests:
+              - not_null
+          - name: type
+            description: "Type of activity (add, drop, trade)"
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['ADD', 'DROP', 'TRADE', 'WAIVER']
+
+      - name: player_stats
+        description: "Raw player performance statistics including season and rolling averages"
+        columns:
+          - name: id
+            description: "Unique identifier for each player"
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: "Player's full name"
+            tests:
+              - not_null
+          - name: position
+            description: "Player's primary position"
+            tests:
+              - not_null
+          - name: avg_stats
+            description: "JSON containing season average statistics"
+          - name: 7d_stats
+            description: "JSON containing 7-day rolling statistics"
+          - name: 15d_stats
+            description: "JSON containing 15-day rolling statistics"
+          - name: 30d_stats
+            description: "JSON containing 30-day rolling statistics"
+
+      - name: teams
+        description: "Raw team information including division assignments and season records"
+        columns:
+          - name: Team Name
+            description: "Name of the fantasy team"
+            tests:
+              - unique
+              - not_null
+          - name: Team ID
+            description: "Unique identifier for the team"
+            tests:
+              - unique
+              - not_null
+          - name: Owner
+            description: "Name of team owner/manager"
+            tests:
+              - not_null
+          - name: Division ID
+            description: "Identifier for team's division"
+            tests:
+              - not_null
+          - name: Total Wins
+            description: "Cumulative wins for the season"
+            tests:
+              - not_null
+              - positive_values
+          - name: Total Losses
+            description: "Cumulative losses for the season"
+            tests:
+              - not_null
+              - positive_values
