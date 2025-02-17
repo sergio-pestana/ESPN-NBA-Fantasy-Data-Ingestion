@@ -42,3 +42,15 @@ models:
       
       silver_teams:
         +schema: silver
+
+      silver_player_stats: 
+        +schema: silver 
+        +materialized: incremental
+        +incremental_strategy: merge
+        +on_schema_change: fail
+
+      silver_last_activities: 
+        +schema: silver 
+        +materialized: incremental
+        +incremental_strategy: merge
+        +on_schema_change: fail
