@@ -166,3 +166,515 @@ Runtime Error
 [0m14:44:42.687860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f72650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fef1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104db3350>]}
 [0m14:44:42.688026 [debug] [MainThread]: Flushing usage events
 [0m14:44:43.550163 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:37:05.093508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103d98050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b379d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b37c50>]}
+
+
+============================== 13:37:05.096541 | 04a45ce1-472a-4391-b932-5dc60809a4d2 ==============================
+[0m13:37:05.096541 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:37:05.096827 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '../', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m13:37:05.097187 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:37:05.098731 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": false, "command_wall_clock_time": 0.04077996, "process_in_blocks": "0", "process_kernel_time": 0.069247, "process_mem_max_rss": "97943552", "process_out_blocks": "0", "process_user_time": 0.540535}
+[0m13:37:05.098949 [debug] [MainThread]: Command `dbt deps` failed at 13:37:05.098902 after 0.04 seconds
+[0m13:37:05.099103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a4b6f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b796d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049f6470>]}
+[0m13:37:05.099248 [debug] [MainThread]: Flushing usage events
+[0m13:37:05.973969 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:37:59.028200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ab8050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068639d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106863c50>]}
+
+
+============================== 13:37:59.031007 | e083042b-050d-4457-b4f4-b80711ebe644 ==============================
+[0m13:37:59.031007 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:37:59.031286 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '../', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:37:59.113532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e083042b-050d-4457-b4f4-b80711ebe644', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d1ab10>]}
+[0m13:37:59.125600 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:37:59.125961 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:37:59.127590 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.13853821, "process_in_blocks": "0", "process_kernel_time": 0.08033, "process_mem_max_rss": "99893248", "process_out_blocks": "0", "process_user_time": 0.574621}
+[0m13:37:59.127781 [debug] [MainThread]: Command `dbt deps` succeeded at 13:37:59.127734 after 0.14 seconds
+[0m13:37:59.127929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106716690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106717ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066d7e50>]}
+[0m13:37:59.128069 [debug] [MainThread]: Flushing usage events
+[0m13:37:59.801764 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:38:00.510161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104168050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f179d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f17c50>]}
+
+
+============================== 13:38:00.512161 | bd2ab480-f82c-4598-93d7-00722d2d5c87 ==============================
+[0m13:38:00.512161 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:38:00.512448 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'debug': 'False', 'profiles_dir': '../', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m13:38:00.513766 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'nbafantasy'
+[0m13:38:00.514425 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.0319335, "process_in_blocks": "0", "process_kernel_time": 0.068402, "process_mem_max_rss": "96108544", "process_out_blocks": "0", "process_user_time": 0.531618}
+[0m13:38:00.514616 [debug] [MainThread]: Command `dbt run` failed at 13:38:00.514573 after 0.03 seconds
+[0m13:38:00.514763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e1b820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f4d910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104dc6690>]}
+[0m13:38:00.514910 [debug] [MainThread]: Flushing usage events
+[0m13:38:01.188748 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:41:20.570838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1040ac050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e579d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e57c50>]}
+
+
+============================== 13:41:20.573742 | c5d1247b-5c73-47d0-a6fd-e011de13d538 ==============================
+[0m13:41:20.573742 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:41:20.574046 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '../', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt deps', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:41:20.654442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c5d1247b-5c73-47d0-a6fd-e011de13d538', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10430eb10>]}
+[0m13:41:20.665837 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:41:20.666422 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:41:20.668299 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.13137326, "process_in_blocks": "0", "process_kernel_time": 0.077218, "process_mem_max_rss": "100614144", "process_out_blocks": "0", "process_user_time": 0.586594}
+[0m13:41:20.668517 [debug] [MainThread]: Command `dbt deps` succeeded at 13:41:20.668465 after 0.13 seconds
+[0m13:41:20.668674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d0a690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d0bce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ccbe50>]}
+[0m13:41:20.668822 [debug] [MainThread]: Flushing usage events
+[0m13:41:21.532399 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:41:22.433272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120940050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1222779d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122277c50>]}
+
+
+============================== 13:41:22.435370 | 5a48837b-f8af-440f-b08a-06bfcb469230 ==============================
+[0m13:41:22.435370 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:41:22.435652 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '../', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:41:22.437088 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'nbafantasy'
+[0m13:41:22.437770 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.032986127, "process_in_blocks": "0", "process_kernel_time": 0.090199, "process_mem_max_rss": "98140160", "process_out_blocks": "0", "process_user_time": 0.571924}
+[0m13:41:22.437965 [debug] [MainThread]: Command `dbt run` failed at 13:41:22.437919 after 0.03 seconds
+[0m13:41:22.438120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12207b820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1222ad910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122026690>]}
+[0m13:41:22.438261 [debug] [MainThread]: Flushing usage events
+[0m13:41:23.109353 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:43:24.781702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105940050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066eb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066ebc50>]}
+
+
+============================== 13:43:24.784588 | be0cd2f7-cdb1-42c3-aa16-26005faa09ba ==============================
+[0m13:43:24.784588 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:43:24.784871 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'debug': 'False', 'profiles_dir': '../', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps --profiles-dir ../', 'send_anonymous_usage_stats': 'True'}
+[0m13:43:24.867236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'be0cd2f7-cdb1-42c3-aa16-26005faa09ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b9eb10>]}
+[0m13:43:24.879245 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:43:24.879766 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:43:24.880905 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.13386142, "process_in_blocks": "0", "process_kernel_time": 0.079878, "process_mem_max_rss": "101318656", "process_out_blocks": "0", "process_user_time": 0.598244}
+[0m13:43:24.881094 [debug] [MainThread]: Command `dbt deps` succeeded at 13:43:24.881046 after 0.13 seconds
+[0m13:43:24.881246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10659e690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10659fce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10655fe50>]}
+[0m13:43:24.881391 [debug] [MainThread]: Flushing usage events
+[0m13:43:25.760862 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:43:26.580849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106604050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078779d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107877c50>]}
+
+
+============================== 13:43:26.582902 | e8e25770-9762-425f-9aa7-d5d21944e8d3 ==============================
+[0m13:43:26.582902 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:43:26.583209 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '../', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir ../', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:43:26.584555 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'nbafantasy'
+[0m13:43:26.585255 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.032731123, "process_in_blocks": "0", "process_kernel_time": 0.081699, "process_mem_max_rss": "96796672", "process_out_blocks": "0", "process_user_time": 0.555255}
+[0m13:43:26.585444 [debug] [MainThread]: Command `dbt run` failed at 13:43:26.585401 after 0.03 seconds
+[0m13:43:26.585592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10777b820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078ad910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107726690>]}
+[0m13:43:26.585733 [debug] [MainThread]: Flushing usage events
+[0m13:43:27.295603 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:44:37.748638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107250050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ffb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ffbc50>]}
+
+
+============================== 13:44:37.751484 | 8d2044a3-1f3d-438c-9a5b-7adee4509a2e ==============================
+[0m13:44:37.751484 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:44:37.751769 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '../profiles.yml', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt deps --profiles-dir ../profiles.yml', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:44:37.814481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8d2044a3-1f3d-438c-9a5b-7adee4509a2e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074aeb10>]}
+[0m13:44:37.825537 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:44:37.825986 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:44:37.827658 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.11411225, "process_in_blocks": "0", "process_kernel_time": 0.0826, "process_mem_max_rss": "100401152", "process_out_blocks": "0", "process_user_time": 0.590339}
+[0m13:44:37.827873 [debug] [MainThread]: Command `dbt deps` succeeded at 13:44:37.827820 after 0.11 seconds
+[0m13:44:37.828043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107eae690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107eafce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e6fe50>]}
+[0m13:44:37.828194 [debug] [MainThread]: Flushing usage events
+[0m13:44:39.077770 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:44:56.548527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108904050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac739d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac73c50>]}
+
+
+============================== 13:44:56.551500 | 3c23c1e5-8ba6-4a08-8a80-2a9186715f54 ==============================
+[0m13:44:56.551500 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:44:56.551817 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'profiles_dir': 'profiles.yml', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps --profiles-dir profiles.yml', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:44:56.600246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3c23c1e5-8ba6-4a08-8a80-2a9186715f54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b66b10>]}
+[0m13:44:56.613160 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:44:56.613583 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:44:56.614670 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.101755, "process_in_blocks": "0", "process_kernel_time": 0.079688, "process_mem_max_rss": "99090432", "process_out_blocks": "0", "process_user_time": 0.587359}
+[0m13:44:56.614866 [debug] [MainThread]: Command `dbt deps` succeeded at 13:44:56.614818 after 0.10 seconds
+[0m13:44:56.615021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab26690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab27ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a9e7e50>]}
+[0m13:44:56.615166 [debug] [MainThread]: Flushing usage events
+[0m13:44:58.366162 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:44:59.140667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108440050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d779d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d77c50>]}
+
+
+============================== 13:44:59.142829 | 00147394-caef-4303-b696-605f26fbeeec ==============================
+[0m13:44:59.142829 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:44:59.143111 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'profiles.yml', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir profiles.yml', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:44:59.144576 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'nbafantasy'
+[0m13:44:59.145323 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.034858417, "process_in_blocks": "0", "process_kernel_time": 0.080352, "process_mem_max_rss": "96894976", "process_out_blocks": "0", "process_user_time": 0.543023}
+[0m13:44:59.145518 [debug] [MainThread]: Command `dbt run` failed at 13:44:59.145473 after 0.04 seconds
+[0m13:44:59.145672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b7b820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dad910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b26690>]}
+[0m13:44:59.145812 [debug] [MainThread]: Flushing usage events
+[0m13:45:02.724159 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:42:02.611409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f04050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070739d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107073c50>]}
+
+
+============================== 11:42:02.614351 | 76deebb4-c524-43f4-889b-76b4eec0d84e ==============================
+[0m11:42:02.614351 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:42:02.614640 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'version_check': 'True', 'profiles_dir': 'profiles.yml', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:42:02.689239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '76deebb4-c524-43f4-889b-76b4eec0d84e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10632ab10>]}
+[0m11:42:02.700411 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:42:02.700845 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:42:02.702632 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.13206154, "process_in_blocks": "0", "process_kernel_time": 0.129822, "process_mem_max_rss": "99074048", "process_out_blocks": "0", "process_user_time": 0.595952}
+[0m11:42:02.702839 [debug] [MainThread]: Command `dbt deps` succeeded at 11:42:02.702795 after 0.13 seconds
+[0m11:42:02.702992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f26690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f27ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106de7e50>]}
+[0m11:42:02.703129 [debug] [MainThread]: Flushing usage events
+[0m11:42:03.596678 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:42:04.329286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103804050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a779d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a77c50>]}
+
+
+============================== 11:42:04.331699 | ec776e53-acd6-4841-9245-49d6a5a7887d ==============================
+[0m11:42:04.331699 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:42:04.331965 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'debug': 'False', 'profiles_dir': 'profiles.yml', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m11:42:04.333367 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'nbafantasy'
+[0m11:42:04.334044 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.038755126, "process_in_blocks": "0", "process_kernel_time": 0.074218, "process_mem_max_rss": "96714752", "process_out_blocks": "0", "process_user_time": 0.526349}
+[0m11:42:04.334253 [debug] [MainThread]: Command `dbt run` failed at 11:42:04.334206 after 0.04 seconds
+[0m11:42:04.334413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10497b820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104aad910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104926690>]}
+[0m11:42:04.334554 [debug] [MainThread]: Flushing usage events
+[0m11:42:05.021115 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:44:55.438046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118104050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119a6f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119a6fc50>]}
+
+
+============================== 11:44:55.440923 | 35618182-8517-4516-8aeb-e20b8279117b ==============================
+[0m11:44:55.440923 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:44:55.441201 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'profiles_dir': 'profiles.yml', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt deps', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:44:55.525274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '35618182-8517-4516-8aeb-e20b8279117b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118326b10>]}
+[0m11:44:55.536347 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:44:55.536771 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:44:55.538419 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.13603704, "process_in_blocks": "0", "process_kernel_time": 0.106221, "process_mem_max_rss": "98811904", "process_out_blocks": "0", "process_user_time": 0.582867}
+[0m11:44:55.538613 [debug] [MainThread]: Command `dbt deps` succeeded at 11:44:55.538566 after 0.14 seconds
+[0m11:44:55.538758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119826690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119827ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118fe7e50>]}
+[0m11:44:55.538915 [debug] [MainThread]: Flushing usage events
+[0m11:44:56.388734 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:46:01.215595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112fb4050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1142739d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114273c50>]}
+
+
+============================== 11:46:01.218483 | 4b2a5588-b940-42a4-bcc7-274de6698b0b ==============================
+[0m11:46:01.218483 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:46:01.218772 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'profiles.yml', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:46:01.302508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4b2a5588-b940-42a4-bcc7-274de6698b0b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11332ab10>]}
+[0m11:46:01.314150 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:46:01.314622 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:46:01.316271 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.13396813, "process_in_blocks": "0", "process_kernel_time": 0.114858, "process_mem_max_rss": "98533376", "process_out_blocks": "0", "process_user_time": 0.603159}
+[0m11:46:01.316465 [debug] [MainThread]: Command `dbt deps` succeeded at 11:46:01.316416 after 0.13 seconds
+[0m11:46:01.316626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114126690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114127ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140ebe50>]}
+[0m11:46:01.316765 [debug] [MainThread]: Flushing usage events
+[0m11:46:01.962889 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:46:13.911059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ad0050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10487b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10487bc50>]}
+
+
+============================== 11:46:13.914187 | 67d31597-bdcf-42b4-b7a7-9a0f65b7c1f9 ==============================
+[0m11:46:13.914187 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:46:13.914516 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'version_check': 'True', 'profiles_dir': 'profiles.yml', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:46:13.963376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '67d31597-bdcf-42b4-b7a7-9a0f65b7c1f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103d32b10>]}
+[0m11:46:13.976570 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:46:13.977085 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:46:13.978803 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.1053185, "process_in_blocks": "0", "process_kernel_time": 0.104156, "process_mem_max_rss": "99532800", "process_out_blocks": "0", "process_user_time": 0.583513}
+[0m11:46:13.979024 [debug] [MainThread]: Command `dbt deps` succeeded at 11:46:13.978970 after 0.11 seconds
+[0m11:46:13.979201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10472e690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10472fce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046f3e50>]}
+[0m11:46:13.979365 [debug] [MainThread]: Flushing usage events
+[0m11:46:14.766945 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:46:15.498437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10534c050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060fb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060fbc50>]}
+
+
+============================== 11:46:15.500718 | cbff3ecf-8d76-4054-911d-2dbd7845a70f ==============================
+[0m11:46:15.500718 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:46:15.501010 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'profiles.yml', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:46:15.502420 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'nbafantasy'
+[0m11:46:15.503101 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.034107417, "process_in_blocks": "0", "process_kernel_time": 0.074899, "process_mem_max_rss": "97796096", "process_out_blocks": "0", "process_user_time": 0.534778}
+[0m11:46:15.503290 [debug] [MainThread]: Command `dbt run` failed at 11:46:15.503246 after 0.03 seconds
+[0m11:46:15.503442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fff820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106131910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105faa690>]}
+[0m11:46:15.503580 [debug] [MainThread]: Flushing usage events
+[0m11:46:16.159896 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:46:29.021637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103e14050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bbf9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bbfc50>]}
+
+
+============================== 11:46:29.025233 | d775f0a8-969d-4001-ba5f-ddb5220caf4c ==============================
+[0m11:46:29.025233 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:46:29.025535 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'version_check': 'True', 'profiles_dir': 'profiles.yml', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m11:46:29.074462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd775f0a8-969d-4001-ba5f-ddb5220caf4c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104072b10>]}
+[0m11:46:29.085189 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:46:29.085688 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:46:29.087403 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.103877164, "process_in_blocks": "0", "process_kernel_time": 0.103394, "process_mem_max_rss": "98926592", "process_out_blocks": "0", "process_user_time": 0.58219}
+[0m11:46:29.087617 [debug] [MainThread]: Command `dbt deps` succeeded at 11:46:29.087568 after 0.10 seconds
+[0m11:46:29.087779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a72690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a73ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a37e50>]}
+[0m11:46:29.087947 [debug] [MainThread]: Flushing usage events
+[0m11:46:29.759059 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:47:36.877217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103424050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045739d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104573c50>]}
+
+
+============================== 11:47:36.880336 | 73babfc4-e4f8-48a5-92c8-904589dfa82b ==============================
+[0m11:47:36.880336 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:47:36.880685 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt deps --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'send_anonymous_usage_stats': 'True'}
+[0m11:47:36.964148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '73babfc4-e4f8-48a5-92c8-904589dfa82b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103686b10>]}
+[0m11:47:36.975474 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:47:36.975932 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:47:36.977610 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.1366033, "process_in_blocks": "0", "process_kernel_time": 0.1105, "process_mem_max_rss": "99237888", "process_out_blocks": "0", "process_user_time": 0.590491}
+[0m11:47:36.977805 [debug] [MainThread]: Command `dbt deps` succeeded at 11:47:36.977758 after 0.14 seconds
+[0m11:47:36.977951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104426690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104427ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042ebe50>]}
+[0m11:47:36.978096 [debug] [MainThread]: Flushing usage events
+[0m11:47:37.815673 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:47:38.544474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108098050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1779d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a177c50>]}
+
+
+============================== 11:47:38.546526 | 699723d2-2fb9-47c4-9da0-9a077e17f77d ==============================
+[0m11:47:38.546526 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:47:38.546826 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:47:38.594621 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "nbafantasy", target "dev" invalid: '5432 | int ' is not of type 'integer'
+[0m11:47:38.595363 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.07926079, "process_in_blocks": "0", "process_kernel_time": 0.077241, "process_mem_max_rss": "99270656", "process_out_blocks": "0", "process_user_time": 0.548557}
+[0m11:47:38.595558 [debug] [MainThread]: Command `dbt run` failed at 11:47:38.595513 after 0.08 seconds
+[0m11:47:38.595713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1feb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2a3bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a026690>]}
+[0m11:47:38.595868 [debug] [MainThread]: Flushing usage events
+[0m11:47:39.283519 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:48:03.029585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105184050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f2f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f2fc50>]}
+
+
+============================== 11:48:03.032413 | 7c22902e-9992-44fc-8680-c26e86bab4e7 ==============================
+[0m11:48:03.032413 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:48:03.032707 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt deps --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:48:03.092457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7c22902e-9992-44fc-8680-c26e86bab4e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053e6b10>]}
+[0m11:48:03.103569 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:48:03.104117 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:48:03.105862 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.114186585, "process_in_blocks": "0", "process_kernel_time": 0.097896, "process_mem_max_rss": "100302848", "process_out_blocks": "0", "process_user_time": 0.589368}
+[0m11:48:03.106086 [debug] [MainThread]: Command `dbt deps` succeeded at 11:48:03.106033 after 0.11 seconds
+[0m11:48:03.106268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105de2690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105de3ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105da7e50>]}
+[0m11:48:03.106426 [debug] [MainThread]: Flushing usage events
+[0m11:48:03.765675 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:48:04.504880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103aec050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10489b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10489bc50>]}
+
+
+============================== 11:48:04.506952 | e1ede0d6-bccd-4118-bc92-65ea95df9b46 ==============================
+[0m11:48:04.506952 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:48:04.507238 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'version_check': 'True', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:48:04.553532 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "nbafantasy", target "dev" invalid: '5432' is not of type 'integer'
+[0m11:48:04.554360 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.07789525, "process_in_blocks": "0", "process_kernel_time": 0.082031, "process_mem_max_rss": "100712448", "process_out_blocks": "0", "process_user_time": 0.550754}
+[0m11:48:04.554559 [debug] [MainThread]: Command `dbt run` failed at 11:48:04.554513 after 0.08 seconds
+[0m11:48:04.554718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104922b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049c7bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10474a690>]}
+[0m11:48:04.554882 [debug] [MainThread]: Flushing usage events
+[0m11:48:05.221443 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:48:35.286780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a80050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106818550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106818410>]}
+
+
+============================== 11:48:35.289877 | d875bac7-4726-459e-84f9-97eed0ff8edb ==============================
+[0m11:48:35.289877 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:48:35.290170 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:48:35.379233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd875bac7-4726-459e-84f9-97eed0ff8edb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068bce90>]}
+[0m11:48:35.390613 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:48:35.391074 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:48:35.392614 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.11912312, "process_in_blocks": "0", "process_kernel_time": 0.110697, "process_mem_max_rss": "98975744", "process_out_blocks": "0", "process_user_time": 0.574792}
+[0m11:48:35.392832 [debug] [MainThread]: Command `dbt deps` succeeded at 11:48:35.392782 after 0.12 seconds
+[0m11:48:35.392988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066da690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066dbce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10669fc50>]}
+[0m11:48:35.393139 [debug] [MainThread]: Flushing usage events
+[0m11:48:36.060390 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:48:36.752103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103814050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045b8550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045b8410>]}
+
+
+============================== 11:48:36.754350 | f4d604e9-dd4b-45c0-b03c-36ca37acbcd4 ==============================
+[0m11:48:36.754350 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:48:36.754622 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:48:36.756103 [error] [MainThread]: Encountered an error:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Runtime Error
+    Syntax error near line 9
+    ------------------------------
+    6  |       host: "{{ env_var('DB_HOST_PROD')}}"
+    7  |       user: "{{ env_var('DB_USER_PROD')}}"
+    8  |       password: "{{ env_var('DB_PASS_PROD')}}"
+    9  |       port: {{ env_var('DB_PORT_PROD')}}         
+    10 |       dbname: "{{ env_var('DB_NAME_PROD')}}"
+    11 |       schema: "{{ env_var('DB_SCHEMA_PROD')}}"
+    12 |       threads: {{ env_var('DB_THREADS_PROD')}}
+    
+    Raw Error:
+    ------------------------------
+    while constructing a mapping
+      in "<unicode string>", line 9, column 13
+    found unhashable key
+      in "<unicode string>", line 9, column 14
+  
+[0m11:48:36.756767 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.012925375, "process_in_blocks": "0", "process_kernel_time": 0.070998, "process_mem_max_rss": "94879744", "process_out_blocks": "0", "process_user_time": 0.507705}
+[0m11:48:36.756952 [debug] [MainThread]: Command `dbt run` failed at 11:48:36.756912 after 0.01 seconds
+[0m11:48:36.757099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044c15b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045d84d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10446e7a0>]}
+[0m11:48:36.757241 [debug] [MainThread]: Flushing usage events
+[0m11:48:37.411732 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:49:04.502171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103d98050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b439d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b43c50>]}
+
+
+============================== 11:49:04.505000 | 725e257c-0c58-4498-ac11-b13b2923bd4f ==============================
+[0m11:49:04.505000 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:49:04.505297 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:49:04.565116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '725e257c-0c58-4498-ac11-b13b2923bd4f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ff6b10>]}
+[0m11:49:04.581683 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:49:04.582187 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:49:04.583339 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.11175408, "process_in_blocks": "0", "process_kernel_time": 0.10544, "process_mem_max_rss": "99123200", "process_out_blocks": "0", "process_user_time": 0.586037}
+[0m11:49:04.583553 [debug] [MainThread]: Command `dbt deps` succeeded at 11:49:04.583501 after 0.11 seconds
+[0m11:49:04.583714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049f6690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049f7ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049bbe50>]}
+[0m11:49:04.583866 [debug] [MainThread]: Flushing usage events
+[0m11:49:05.303059 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:49:06.044707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104044050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059779d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105977c50>]}
+
+
+============================== 11:49:06.046780 | 314530e1-1993-4a3f-90cf-e3f22370a297 ==============================
+[0m11:49:06.046780 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:49:06.047056 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'version_check': 'True', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'send_anonymous_usage_stats': 'True'}
+[0m11:49:06.144032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '314530e1-1993-4a3f-90cf-e3f22370a297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e4e2c0>]}
+[0m11:49:06.167452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '314530e1-1993-4a3f-90cf-e3f22370a297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105826cf0>]}
+[0m11:49:06.168006 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:49:06.228405 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:49:06.228837 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:49:06.229013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '314530e1-1993-4a3f-90cf-e3f22370a297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a06250>]}
+[0m11:49:06.524692 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.nbafantasy
+- models.nbafantasy.silver.silver_player_stats
+- models.nbafantasy.silver.silver_teams
+- models.nbafantasy.silver.silver_last_activities
+- models.nbafantasy.silver.silver_boxscores
+[0m11:49:06.526885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '314530e1-1993-4a3f-90cf-e3f22370a297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039b35c0>]}
+[0m11:49:06.542816 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/manifest.json
+[0m11:49:06.544731 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/semantic_manifest.json
+[0m11:49:06.553731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '314530e1-1993-4a3f-90cf-e3f22370a297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106745710>]}
+[0m11:49:06.553927 [info ] [MainThread]: Found 431 macros
+[0m11:49:06.554072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '314530e1-1993-4a3f-90cf-e3f22370a297', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10652d7e0>]}
+[0m11:49:06.554678 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:49:06.554902 [debug] [MainThread]: Command end result
+[0m11:49:06.563070 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/manifest.json
+[0m11:49:06.563640 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/semantic_manifest.json
+[0m11:49:06.564950 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/run_results.json
+[0m11:49:06.565682 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.54927194, "process_in_blocks": "0", "process_kernel_time": 0.116165, "process_mem_max_rss": "107872256", "process_out_blocks": "0", "process_user_time": 0.936141}
+[0m11:49:06.565870 [debug] [MainThread]: Command `dbt run` succeeded at 11:49:06.565824 after 0.55 seconds
+[0m11:49:06.566036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e47a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106511b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10679a6d0>]}
+[0m11:49:06.566182 [debug] [MainThread]: Flushing usage events
+[0m11:49:07.241853 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:49:07.983970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104040050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104deb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104debc50>]}
+
+
+============================== 11:49:07.986771 | 8c24ba3c-3583-4b0e-9487-771b2075d99f ==============================
+[0m11:49:07.986771 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:49:07.987105 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt test --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:49:08.099406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c24ba3c-3583-4b0e-9487-771b2075d99f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10536a2c0>]}
+[0m11:49:08.125800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c24ba3c-3583-4b0e-9487-771b2075d99f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c9acf0>]}
+[0m11:49:08.126313 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:49:08.169783 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:49:08.199022 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:49:08.199250 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:49:08.199584 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.nbafantasy.silver.silver_last_activities
+- models.nbafantasy.silver.silver_teams
+- models.nbafantasy
+- models.nbafantasy.silver.silver_boxscores
+- models.nbafantasy.silver.silver_player_stats
+[0m11:49:08.202012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c24ba3c-3583-4b0e-9487-771b2075d99f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105adcf50>]}
+[0m11:49:08.220066 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/manifest.json
+[0m11:49:08.221788 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/semantic_manifest.json
+[0m11:49:08.237301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8c24ba3c-3583-4b0e-9487-771b2075d99f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b8b890>]}
+[0m11:49:08.237586 [info ] [MainThread]: Found 431 macros
+[0m11:49:08.237809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c24ba3c-3583-4b0e-9487-771b2075d99f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cce270>]}
+[0m11:49:08.238622 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:49:08.239554 [debug] [MainThread]: Command end result
+[0m11:49:08.247492 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/manifest.json
+[0m11:49:08.248680 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/semantic_manifest.json
+[0m11:49:08.250349 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/run_results.json
+[0m11:49:08.251228 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.29978535, "process_in_blocks": "0", "process_kernel_time": 0.117323, "process_mem_max_rss": "110690304", "process_out_blocks": "0", "process_user_time": 0.720987}
+[0m11:49:08.251480 [debug] [MainThread]: Command `dbt test` succeeded at 11:49:08.251422 after 0.30 seconds
+[0m11:49:08.251699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cefba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bbfa10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cd0410>]}
+[0m11:49:08.251877 [debug] [MainThread]: Flushing usage events
+[0m11:49:08.907675 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:52:20.664211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106498050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c739d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c73c50>]}
+
+
+============================== 11:52:20.667076 | 920b56f0-4713-4e83-95fe-00937c6de9fd ==============================
+[0m11:52:20.667076 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:52:20.667358 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt deps --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:52:20.748209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '920b56f0-4713-4e83-95fe-00937c6de9fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065beb10>]}
+[0m11:52:20.759406 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:52:20.759837 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:52:20.761477 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.12965758, "process_in_blocks": "0", "process_kernel_time": 0.102885, "process_mem_max_rss": "99385344", "process_out_blocks": "0", "process_user_time": 0.576692}
+[0m11:52:20.761661 [debug] [MainThread]: Command `dbt deps` succeeded at 11:52:20.761617 after 0.13 seconds
+[0m11:52:20.761804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b26690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b27ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107aebe50>]}
+[0m11:52:20.761947 [debug] [MainThread]: Flushing usage events
+[0m11:52:21.537715 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:52:22.274994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f9c050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1108779d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110877c50>]}
+
+
+============================== 11:52:22.277094 | 48095152-63a8-4fb8-bbfb-b2767a8b5717 ==============================
+[0m11:52:22.277094 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:52:22.277377 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:52:22.359148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '48095152-63a8-4fb8-bbfb-b2767a8b5717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c8a2c0>]}
+[0m11:52:22.383018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '48095152-63a8-4fb8-bbfb-b2767a8b5717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110726cf0>]}
+[0m11:52:22.383586 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:52:22.429841 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:52:22.477777 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:52:22.477941 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:52:22.478215 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.nbafantasy.silver.silver_player_stats
+- models.nbafantasy.silver.silver_teams
+- models.nbafantasy.silver.silver_boxscores
+- models.nbafantasy
+- models.nbafantasy.silver.silver_last_activities
+[0m11:52:22.480332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '48095152-63a8-4fb8-bbfb-b2767a8b5717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113c0f50>]}
+[0m11:52:22.497391 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/manifest.json
+[0m11:52:22.499296 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/semantic_manifest.json
+[0m11:52:22.506744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '48095152-63a8-4fb8-bbfb-b2767a8b5717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10695b5c0>]}
+[0m11:52:22.506944 [info ] [MainThread]: Found 431 macros
+[0m11:52:22.507089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '48095152-63a8-4fb8-bbfb-b2767a8b5717', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11143cbb0>]}
+[0m11:52:22.507692 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:52:22.508439 [debug] [MainThread]: Command end result
+[0m11:52:22.515717 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/manifest.json
+[0m11:52:22.516415 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/semantic_manifest.json
+[0m11:52:22.517684 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/run_results.json
+[0m11:52:22.518410 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.28103054, "process_in_blocks": "0", "process_kernel_time": 0.113163, "process_mem_max_rss": "107642880", "process_out_blocks": "0", "process_user_time": 0.685552}
+[0m11:52:22.518598 [debug] [MainThread]: Command `dbt run` succeeded at 11:52:22.518555 after 0.28 seconds
+[0m11:52:22.518752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11142b110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11054ba10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111450ad0>]}
+[0m11:52:22.518896 [debug] [MainThread]: Flushing usage events
+[0m11:52:23.197254 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:52:23.926725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103384050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041339d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104133c50>]}
+
+
+============================== 11:52:23.928800 | d2b61353-6d1d-4de6-a366-9ce9e91fdbff ==============================
+[0m11:52:23.928800 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:52:23.929112 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/logs', 'profiles_dir': '/Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt test --profiles-dir /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:52:24.002007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd2b61353-6d1d-4de6-a366-9ce9e91fdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046b22c0>]}
+[0m11:52:24.025539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd2b61353-6d1d-4de6-a366-9ce9e91fdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fe2cf0>]}
+[0m11:52:24.025878 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m11:52:24.066256 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m11:52:24.092849 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:52:24.093015 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:52:24.093301 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 5 unused configuration paths:
+- models.nbafantasy.silver.silver_boxscores
+- models.nbafantasy.silver.silver_last_activities
+- models.nbafantasy.silver.silver_player_stats
+- models.nbafantasy.silver.silver_teams
+- models.nbafantasy
+[0m11:52:24.095458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd2b61353-6d1d-4de6-a366-9ce9e91fdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e24f50>]}
+[0m11:52:24.112483 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/manifest.json
+[0m11:52:24.113933 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/semantic_manifest.json
+[0m11:52:24.128333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd2b61353-6d1d-4de6-a366-9ce9e91fdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ed3890>]}
+[0m11:52:24.128593 [info ] [MainThread]: Found 431 macros
+[0m11:52:24.128735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd2b61353-6d1d-4de6-a366-9ce9e91fdbff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105016270>]}
+[0m11:52:24.129391 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m11:52:24.130195 [debug] [MainThread]: Command end result
+[0m11:52:24.138554 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/manifest.json
+[0m11:52:24.139370 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/semantic_manifest.json
+[0m11:52:24.140693 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sergiopestana/Documents/Code n Stuff/ESPN NBA Fantasy Data Ingestion/target/run_results.json
+[0m11:52:24.141457 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.24469213, "process_in_blocks": "0", "process_kernel_time": 0.104814, "process_mem_max_rss": "109019136", "process_out_blocks": "0", "process_user_time": 0.699675}
+[0m11:52:24.141642 [debug] [MainThread]: Command `dbt test` succeeded at 11:52:24.141601 after 0.24 seconds
+[0m11:52:24.141806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105037ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f03a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105018410>]}
+[0m11:52:24.141946 [debug] [MainThread]: Flushing usage events
+[0m11:52:24.812004 [debug] [MainThread]: An error was encountered while trying to flush usage events
